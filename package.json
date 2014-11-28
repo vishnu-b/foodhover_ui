@@ -1,0 +1,28 @@
+{
+  "name": "foodhover",
+  "version": "1.0.0",
+  "description": "We pickup. We deliver. We connect.",
+  "main": "server.js",
+  "scripts": {
+    "test": "none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://vishnutav@bitbucket.org/papayaseeds/foodhover.git"
+  },
+  "keywords": [
+    "pickup",
+    "deliver",
+    "connect"
+  ],
+  "author": "Papaya Seeds",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.9.3",
+    "cookie-parser": "^1.3.3",
+    "express": "^4.10.4",
+    "express-session": "^1.9.2",
+    "nodemailer": "^1.3.0",
+    "nunjucks": "^1.1.0"
+  }
+}
