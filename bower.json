@@ -1,0 +1,23 @@
+{
+  "name": "foodhover",
+  "version": "0.0.0",
+  "authors": [
+    "Vishnu B <vishnu.nxg@gmail.com>"
+  ],
+  "description": "We pick. We deliver. We connect.",
+  "moduleType": [
+    "node"
+  ],
+  "dependencies": {
+    "foundation": "zurb/bower-foundation"
+  },
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
