@@ -1,0 +1,70 @@
+@import 'variables';
+
+@import '../libs/foundation/scss/foundation/_settings';
+@import '../libs/foundation/scss/foundation';
+@import url(http://fonts.googleapis.com/css?family=Josefin+Slab);
+
+body {
+    font-family: 'Josefin Slab', sans-serif;
+}
+
+.row.header {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.title {
+    font-size: 1.5em;
+}
+
+.header-links{
+    font-size: 1.1em;
+    float: right;
+    padding-top: .20em;
+}
+
+@media #{$small-up} {
+
+}
+@media #{$small-only} {
+    .row.header {
+        margin-top: 1em;
+        margin-bottom: .2em;
+        text-align: center;
+        box-shadow: 0 8px 6px -6px black;
+    }
+
+    .header-links{
+        float: none;
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+@media #{$medium-up} {
+
+}
+@media #{$medium-only} {
+
+}
+
+@media #{$large-up} {
+
+}
+@media #{$large-only} {
+
+}
+
+@media #{$xlarge-up} {
+
+}
+@media #{$xlarge-only} {
+
+}
+
+@media #{$xxlarge-up} {
+
+}
+@media #{$xxlarge-only} {
+
+}

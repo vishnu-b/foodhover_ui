@@ -1,7 +1,7 @@
 module.exports = function(grunt) {
     //Grunt configuration
     grunt.initConfig({
-        pkg: grunt.file.readJSON('package.json'),
+        //pkg: grunt.file.readJSON('package.json'),
 
         // check all js files for errors
         jshint: {
@@ -35,12 +35,10 @@ module.exports = function(grunt) {
             }
         },
 
-        //compiling sass to css
-        sass: {
-            development: {
-                files: {
-                    "./public/css/main.css":"./public/sass/main.sass"
-                }
+        libsass: {
+            dev: {
+                src: "./public/scss/main.scss",
+                dest: "./public/css/main.css"
             }
         },
 
@@ -65,12 +63,8 @@ module.exports = function(grunt) {
                 tasks: ['concat:js', 'uglify:js']
             },
             sass: {
-                files: ['./public/sass/main.sass'],
-                tasks: ['sass']
-            },
-            css: {
-                files: ['./public/css/main.css'],
-                tasks: []
+                files: ['./public/scss/main.scss'],
+                tasks: ['libsass']
             }
         },
 
@@ -85,7 +79,7 @@ module.exports = function(grunt) {
 
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-concat');
-    grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-libsass');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-nodemon');
@@ -93,7 +87,7 @@ module.exports = function(grunt) {
 
     grunt.registerTask('con', ['concat']);
     grunt.registerTask('minify', ['uglify']);
-    grunt.registerTask('css', ['sass']);
+    grunt.registerTask('sass', ['libsass']);
     grunt.registerTask('nodem', ['nodemon']);
     grunt.registerTask('default', ['watch']);
 
