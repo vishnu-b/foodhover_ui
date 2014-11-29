@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Hello</title>
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
-</head>
+{% include "partials/_header.html" %}
 <body>
     {% block header %}
         Default header content.
     {% endblock %}
+
+    {% include "partials/_footer.html" %}
 </body>
 </html>
