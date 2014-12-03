@@ -4,40 +4,34 @@
 @import '../libs/foundation/scss/foundation';
 @import url(http://fonts.googleapis.com/css?family=Josefin+Slab);
 
-body {
+body, h1, h2, h3, h4, h5, h6{
     font-family: 'Josefin Slab', sans-serif;
 }
 
-.row.header {
-    margin-top: 2em;
-    margin-bottom: 2em;
+.motto {
+    h1 {
+        font-weight: normal;
+        font-size: 2em;
+        padding-bottom: 1em;
+    }
 }
 
-.title {
-    font-size: 1.5em;
-}
-
-.header-links{
-    font-size: 1.1em;
-    float: right;
-    padding-top: .20em;
-}
 
 @media #{$small-up} {
 
 }
 @media #{$small-only} {
-    .row.header {
-        margin-top: 1em;
-        margin-bottom: .2em;
-        text-align: center;
-        box-shadow: 0 8px 6px -6px black;
+    .top-bar{
+        .name h1 a{
+            font-size: .6em;
+        }
     }
-
-    .header-links{
-        float: none;
-        width: 50%;
-        margin: 0 auto;
+    .motto {
+        h1 {
+            font-weight: normal;
+            font-size: 1em;
+            padding-bottom: 1em;
+        }
     }
 }
 

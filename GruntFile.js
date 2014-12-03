@@ -12,8 +12,8 @@ module.exports = function(grunt) {
         concat: {
             js: {
                 src: [
-                    './public/libs/foundation/js/foundation.js',
                     './public/libs/foundation/js/vendor/jquery.js',
+                    './public/libs/foundation/js/foundation.js',
                     './public/libs/foundation/js/vendor/jquery.cookie.js',
                     './public/libs/foundation/js/vendor/placeholder.js',
                     './public/libs/foundation/js/vendor/fastclick.js'
@@ -63,7 +63,7 @@ module.exports = function(grunt) {
                 tasks: ['concat:js', 'uglify:js']
             },
             sass: {
-                files: ['./public/scss/main.scss'],
+                files: ['./public/scss/main.scss', './public/libs/foundation/scss/foundation/_settings.scss'],
                 tasks: ['libsass']
             }
         },
